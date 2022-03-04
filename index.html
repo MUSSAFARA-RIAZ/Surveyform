@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 20px;
+            width: 550px;
+            margin: auto;
+            background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHN1cnZleXxlbnwwfHwwfHw%3D&w=1000&q=80');
+        }
+
+        #mainform {
+            background-color: black;
+            color: white;
+            margin: 0px;
+            padding: 10px;
+
+        }
+
+        #name {
+            margin: 20px;
+        }
+
+        #email {
+            margin-left: 16px;
+            padding: auto;
+
+        }
+
+        #number {
+            margin-left: 33px;
+            width: 168px;
+            margin-top: 10px;
+
+        }
+
+        #dropdown {
+            margin: 10px;
+
+        }
+
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+            text-align: center;
+
+        }
+
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+
+            border: 1px solid blue;
+
+            border-radius: 2px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+
+
+        }
+
+        #title {
+            text-align: center;
+          /* /\  text-decoration: underline; */
+            animation: typing 1.5s steps(10) infinite;
+            text-overflow: clip;
+
+            display: inline;
+            text-shadow: 4px 4px 1px red;
+            animation-direction:alternate-reverse;
+
+
+
+
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+        }
+
+        @keyframes typing {
+            50% {
+                left: 100%;
+                margin: 0px 20px 30px 20px;
+                text-transform: uppercase;
+                text-decoration-style: wavy;
+            }
+        }
+
+        #description {
+            text-align: center;
+
+        }
+
+        .form-control textarea {
+            width: 400px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="mainform">
+
+        <h1 id="title">M-TECH SURVEY FORM</h1>
+        <p id="description"><small> M-TECH is software house formed by Engr.Mussafara Riaz</small> </p>
+        <form action="" id="surveyform">
+            <label id="name-label" for="name">NAME</label>
+            <input id="name" type="text" placeholder="Enter your name">
+            <br>
+
+
+            <label id="email-label" for="email">EMAIL</label>
+
+            <input type="email" id="email" value="default@email.com" placeholder="Enter your email">
+            <br>
+            <label for="number" id="number-label">AGE</label>
+            <input type="number" name="" id="number" min="10" max="100" placeholder="Enter age">
+            <br>
+            <div id="form-control">
+                <label for="dropdown">
+                    How did you find us?
+                </label>
+                <select name="" id="dropdown">
+                    <option value="Facebook">Facebook</option>
+                    <option value="Twitter">Twitter</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Personal Website">Our Personal website</option>
+                    <option value="Whatsapp group">Whatsapp group</option>
+                </select>
+            </div>
+            <div class="form-control">
+
+                <label for="choice"><strong>Would you like our website?</strong> </label>
+                <label for="choice1">
+                    <input type="radio" name="name" id="choice1" value="Definitely">"Definitely"
+
+                </label>
+                <label for="choice2">
+                    <input type="radio" name="name" id="choice1" value="maybe">Maybe
+                </label>
+
+                <label for="choice3">
+                    <input type="radio" name="name" id="choice3" value="No,I dont like">No,I dont like
+
+                </label>
+            </div>
+            <div class="form-control">
+                <label> <strong>what would we improve ?</strong> </label>
+                <label for="id1">
+                    <input type="checkbox" name="name" id="id1">Company's Environment
+                </label>
+                <label for="id2">
+                    <input type="checkbox" name="name" id="id2">HR department
+                </label>
+                <label for="id3">
+                    <input type="checkbox" name="name" id="id3">Technical staff
+                </label>
+                <label for="id4">
+                    <input type="checkbox" name="name" id="id4">Salary's Increment
+                </label>
+                <label for="id5">
+                    <input type="checkbox" name="name" id="id5">Company's Building
+                </label>
+                <label for="id6">
+                    <input type="checkbox" name="name" id="id6">Open Source Community
+                </label>
+            </div>
+            <div class="form-control">
+                <label for="suggestions"><strong>Any Suggestions?</strong>
+            </div>
+            <textarea name="textarea1" id="suggestions" cols="70" rows="20"
+                placeholder="Enter your text here"></textarea>
+            <button id="submit" type="submit">Submit</button>
+    </div>
+    </form>
+    </div>
+</body>
+
+</html>
